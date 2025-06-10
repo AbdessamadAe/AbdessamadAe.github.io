@@ -32,14 +32,6 @@ const meta = {
 	</div>
 
 	<div class="prose prose-sm prose-cactus max-w-none">
-		<h2>What I'm Passionate About</h2>
-		<ul class="list-inside list-disc" role="list">
-			<li><strong>Educational Technology:</strong> Making learning accessible through interactive content</li>
-			<li><strong>Sustainable Innovation:</strong> Using AI and gamification for environmental impact</li>
-			<li><strong>Cross-Cultural Communication:</strong> Bridging language barriers in tech education</li>
-			<li><strong>Robotics & Competition:</strong> Building and programming competitive robots</li>
-		</ul>
-
 		<h2>Personal Highlights</h2>
 		<ul class="list-inside list-disc" role="list">
 			<li>Created educational content reaching thousands of Arabic-speaking students</li>
@@ -48,20 +40,136 @@ const meta = {
 			<li>Study abroad experience in Denmark</li>
 		</ul>
 		<h2>Projects I'm Proud Of</h2>
-		<ul class="list-inside list-disc" role="list">
-			<li>
-				<a href="https://sustaineur.co">Sustaineur.co</a> - AI-powered platform gamifying sustainable business practices
-			</li>
-			<li>
-				<strong>Katuripu YouTube Channel</strong> - Educational content in Moroccan Arabic using interactive animations
-			</li>
-			<li>
-				<a href="https://medicament.ma">Medicament.ma</a> - Healthcare platform serving 500,000+ users monthly
-			</li>
-			<li>
-				<strong>Medicaments au Maroc</strong> - Mobile app connecting users with pharmacy information
-			</li>
-		</ul>
+		
+		<div class="not-prose grid gap-6 md:grid-cols-2">
+
+			<!-- Katuripu App -->
+			<div class="rounded-lg border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
+				<div class="mb-4">
+					<img 
+						src="/projects/katuripu-app.png" 
+						alt="Katuripu - Educational platform" 
+						class="w-full h-48 object-contain rounded-lg"
+						loading="lazy"
+					/>
+				</div>
+				<h3 class="text-lg font-semibold mb-2">Educational Platform</h3>
+				<p class="text-muted-foreground text-sm mb-3">
+					A gamified educational platform that offers learning roadmaps for students as they prepare for Math tests.
+				</p>
+				<div class="flex items-center justify-between">
+					<div class="flex gap-2">
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">Python</span>
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">Manim</span>
+					</div>
+					<a 
+						href="https://youtube.com/@katuripu" 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="text-sm text-link hover:underline"
+					>
+						Visit Site →
+					</a>
+				</div>
+			</div>
+
+			<!-- Medicament.ma -->
+			<div class="rounded-lg border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
+				<div class="mb-4">
+					<img 
+						src="/projects/medicament.png" 
+						alt="Medicament.ma - Healthcare platform" 
+						class="w-full h-48 object-cover rounded-lg"
+						loading="lazy"
+					/>
+				</div>
+				<h3 class="text-lg font-semibold mb-2">Medicament.ma</h3>
+				<p class="text-muted-foreground text-sm mb-3">
+					WordPress-based healthcare platform serving over 500,000 monthly users for medication search 
+					and pharmacy information across Morocco.
+				</p>
+				<div class="flex items-center justify-between">
+					<div class="flex gap-2">
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">WordPress</span>
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">PHP</span>
+					</div>
+					<a 
+						href="https://medicament.ma" 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="text-sm text-link hover:underline"
+					>
+						Visit Site →
+					</a>
+				</div>
+			</div>
+
+			<!-- Express -->
+			<div class="rounded-lg border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
+				<div class="mb-4">
+					<img 
+						src="/projects/xpress.png" 
+						alt="Express Platform" 
+						class="w-full h-48 object-contain rounded-lg"
+						loading="lazy"
+					/>
+				</div>
+				<h3 class="text-lg font-semibold mb-2">Express</h3>
+				<p class="text-muted-foreground text-sm mb-3">
+					Contributed to the development of a platform that enables students to provide anonymous feedback for university services
+				</p>
+				<div class="flex items-center justify-between">
+					<div class="flex gap-2">
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">React</span>
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">NodeJs</span>
+					</div>
+					<a 
+						href="https://express.aui.ma/" 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="text-sm text-link hover:underline"
+					>
+						Visit site →
+					</a>
+				</div>
+			</div>
+
+			<!-- Sustaineur.co -->
+			<div class="rounded-lg border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
+				<div class="mb-4">
+					<img 
+						src="/projects/sustaineur.png" 
+						alt="Sustaineur.co - AI-powered sustainability platform" 
+						class="w-full h-48 object-contain rounded-lg"
+						loading="lazy"
+					/>
+				</div>
+				<h3 class="text-lg font-semibold mb-2">Sustaineur.co</h3>
+				<p class="text-muted-foreground text-sm mb-3">
+					A gamified AI-integrated platform that helps businesses develop and implement sustainable practices. 
+					Built with modern tech stack including Go microservices and React frontend.
+				</p>
+				<div class="flex items-center justify-between">
+					<div class="flex gap-2">
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">Go</span>
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">React</span>
+						<span class="px-2 py-1 bg-accent text-accent-foreground text-xs rounded">AI</span>
+					</div>
+					<a 
+						href="https://sustaineur.co" 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="text-sm text-link hover:underline"
+					>
+						Visit Site →
+					</a>
+				</div>
+			</div>
+
+
+
+
+		</div>
 		
 		<h2>Let's Connect!</h2>
 		<p>
