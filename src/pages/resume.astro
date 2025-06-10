@@ -1,0 +1,177 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "Resume of Abdessamad Ait Elmouden - Software Engineer",
+	title: "Resume",
+};
+---
+
+<PageLayout meta={meta}>
+	<div class="mb-6 flex items-center justify-between">
+		<h1 class="title">Resume</h1>
+		<a 
+			href="/resume.pdf" 
+			class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/80"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+			</svg>
+			Download PDF
+		</a>
+	</div>
+
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<!-- Contact Information -->
+		<div class="mb-8 rounded-lg bg-muted p-6">
+			<h2 class="mb-4">Contact Information</h2>
+			<div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+				<div>
+					<strong>Email:</strong> <a href="mailto:ab.aitelmouden@gmail.com">ab.aitelmouden@gmail.com</a>
+				</div>
+				<div>
+					<strong>Phone:</strong> <a href="tel:+212651026203">+212-651-026-203</a>
+				</div>
+				<div>
+					<strong>Location:</strong> Massa, Chtouka Ait Baha, Morocco
+				</div>
+				<div>
+					<strong>GitHub:</strong> <a href="https://github.com/AbdessamadAe" target="_blank">@AbdessamadAe</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Education -->
+		<section class="mb-8">
+			<h2>Education</h2>
+			
+			<div class="mb-6">
+				<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+					<p class="text-lg font-semibold">Bachelor of Science in Computer Science</p>
+					<span class="text-sm text-muted-foreground">09/2021 – present</span>
+				</div>
+				<p class="text-sm text-muted-foreground">Al Akhawayn University in Ifrane, Morocco</p>
+				<p><strong>GPA:</strong> 3.85/4.00</p>
+			</div>
+
+			<div class="mb-6">
+				<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+					<p class="text-lg font-semibold">Exchange Semester</p>
+					<span class="text-sm text-muted-foreground">09/2024 – 01/2025</span>
+				</div>
+				<p class="text-sm text-muted-foreground">Roskilde University, Denmark</p>
+			</div>
+
+			<div class="mb-6">
+				<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+					<p class="text-lg font-semibold">Baccalaureate in Mathematics</p>
+					<span class="text-sm text-muted-foreground">07/2021</span>
+				</div>
+				<p class="text-sm text-muted-foreground">Al Masira Al Khadra, Massa, Morocco</p>
+				<p><strong>Achievement:</strong> First Rank in the Chtouka Ait Baha Region (Mathematics Major)</p>
+			</div>
+		</section>
+
+		<!-- Experience -->
+		<section class="mb-8">
+			<h2>Experience</h2>
+			
+			<div class="mb-6">
+				<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+					<p class="text-lg font-semibold">Software Engineer - Freelance</p>
+					<span class="text-sm text-muted-foreground">03/2025 – present</span>
+				</div>
+				<p class="text-sm text-muted-foreground">UM6P - Mohammed VI Polytechnic University, Rabat, Morocco</p>
+				<ul class="mt-2">
+					<li>Developed a gamified AI-integrated platform for sustainable business models</li>
+					<li>Contributed to full-stack development, enhancing the platform's performance</li>
+					<li>Managing 5 micro services</li>
+					<li><strong>Skills:</strong> Go, React, TypeScript</li>
+				</ul>
+			</div>
+
+			<div class="mb-6">
+				<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+					<p class="text-lg font-semibold">Software Developer - Freelance</p>
+					<span class="text-sm text-muted-foreground">07/2024 – present</span>
+				</div>
+				<p class="text-sm text-muted-foreground">FACILACOM, Morocco</p>
+				<ul class="mt-2">
+					<li><strong>Medicaments au Maroc:</strong> Developed a React Native app with over 1,000 active users</li>
+					<li><strong>Medicament.ma:</strong> Maintained a WordPress website for medication search with 500,000+ monthly active users</li>
+					<li><strong>Pharmacie.ma:</strong> Developed a platform for Moroccan pharmacy information using Zend Framework</li>
+					<li><strong>Skills:</strong> Git, AWS, Shell, Python, CI/CD, React, JavaScript, TypeScript, Jest, Expo, HTML, CSS</li>
+				</ul>
+			</div>
+
+			<div class="mb-6">
+				<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+					<p class="text-lg font-semibold">Data Engineer and Analyst (Part-time)</p>
+					<span class="text-sm text-muted-foreground">06/2023 – 01/2024</span>
+				</div>
+				<p class="text-sm text-muted-foreground">CLE - Center for Learning Excellence, Ifrane, Morocco</p>
+				<ul class="mt-2">
+					<li><strong>Analysis:</strong> Structured and analyzed academic data to measure the impact of tutoring services</li>
+					<li><strong>Skills:</strong> Probability theory, Python, MongoDB, PowerBI, Metabase</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Awards -->
+		<section class="mb-8">
+			<h2>Awards</h2>
+			<ul>
+				<li><strong>Moroccan Champion:</strong> VEX-U Robotics Tournament (2024, 2023), Vex</li>
+				<li><strong>Best Group Project Award:</strong> Huawei Tech4Good Competition (2023), Huawei</li>
+				<li><strong>Full Merit-Based Scholarship:</strong> Al Akhawayn University in Ifrane (2021)</li>
+			</ul>
+		</section>
+
+		<!-- Organizations -->
+		<section class="mb-8">
+			<h2>Organizations</h2>
+			<div class="mb-4">
+				<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+					<p class="text-lg font-semibold">Katuripu</p>
+					<span class="text-sm text-muted-foreground">09/2022</span>
+				</div>
+				<p class="text-sm text-muted-foreground">YouTube Channel, Morocco</p>
+				<ul class="mt-2">
+					<li>Produced engaging educational content in Moroccan Arabic with interactive visuals, using Manim (Python)</li>
+					<li>Specialized in mathematics and computer science topics</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Languages -->
+		<section class="mb-8">
+			<h2>Languages</h2>
+			<p><strong>Fluent:</strong> English, French, Arabic, Tamazight</p>
+		</section>
+
+		<!-- Technical Skills -->
+		<section class="mb-8">
+			<h2>Technical Skills</h2>
+			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+				<div>
+					<h4 class="font-semibold">Programming Languages</h4>
+					<p class="text-sm">Go, Python, JavaScript, TypeScript, PHP</p>
+				</div>
+				<div>
+					<h4 class="font-semibold">Frontend</h4>
+					<p class="text-sm">React, React Native, HTML, CSS, Tailwind CSS</p>
+				</div>
+				<div>
+					<h4 class="font-semibold">Backend & Database</h4>
+					<p class="text-sm">Express, MongoDB, MySQL, Zend Framework</p>
+				</div>
+				<div>
+					<h4 class="font-semibold">Tools & Technologies</h4>
+					<p class="text-sm">Git, AWS, Docker, CI/CD, Jest, Expo, Shell, PowerBI, Metabase</p>
+				</div>
+			</div>
+		</section>
+	</div>
+</PageLayout>

@@ -17,6 +17,16 @@ const socialLinks: {
 		link: "https://github.com/AbdessamadAe",
 		name: "mdi:github",
 	},
+	{
+		friendlyName: "Email",
+		link: "mailto:ab.aitelmouden@gmail.com",
+		name: "mdi:email",
+	},
+	{
+		friendlyName: "YouTube",
+		link: "https://youtube.com/@katuripu",
+		name: "mdi:youtube",
+	},
 ];
 ---
 
@@ -32,7 +42,7 @@ const socialLinks: {
 						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
 						target="_blank"
 					>
-						<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name={name} />
+						<Icon aria-hidden="true" class="h-6 w-6" focusable="false" name={name} />
 						<span class="sr-only">{friendlyName}</span>
 					</a>
 				</li>
