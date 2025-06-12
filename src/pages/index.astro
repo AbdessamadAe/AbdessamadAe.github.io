@@ -21,7 +21,8 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 ---
 
 <PageLayout meta={{ title: "Home" }}>
-	<section>
+	<section class="mb-8 flex flex-col gap-6 md:flex-row md:items-start">
+	<div class="prose prose-sm prose-cactus flex-1 max-w-none">
 		<h1 class="title mb-6">Hello World!</h1>
 		<p class="mb-4">
 			I'm Abdessamad, a Software Engineer from Morocco specializing in full-stack development and AI integration.
@@ -30,6 +31,14 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 			Currently doing my bachelor in Math and Computer Science. And at the same time, working as a freelance full stack engineer, buildiing and maintaining applications that are used by thousands of users. 
 		</p>
 		<SocialList />
+		</div>
+		<div class="md:w-80 flex justify-center md:justify-end">
+			<img 
+				src="/abdessamad.jpeg" 
+				alt="Abdessamad Ait Elmouden" 
+				class="rounded-lg shadow-lg w-64 h-80 object-cover"
+			/>
+		</div>
 	</section>
 	<section class="mt-16">
 		<h2 class="title text-accent mb-6 text-xl"><a href="/posts/">Posts</a></h2>
