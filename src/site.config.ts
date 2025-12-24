@@ -26,7 +26,6 @@ export const siteConfig: SiteConfig = {
 		- In the footer found in src/components/layout/Footer.astro L:12
 	*/
 	title: "Abdessamad Ait Elmouden",
-	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
 	url: "https://abdessamadae.me/",
 };
 
@@ -36,10 +35,10 @@ export const menuLinks: { path: string; title: string }[] = [
 		path: "/",
 		title: "Home",
 	},
-	{
-		path: "/about/",
-		title: "About",
-	},
+	// {
+	// 	path: "/about/",
+	// 	title: "About",
+	// },
 	{
 		path: "/posts/",
 		title: "Blog",
